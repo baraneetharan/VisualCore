@@ -1,0 +1,40 @@
+{
+  "userSecretsId": "aspnet5-EmployeeWebApi-0173098c-cabe-4aac-afa3-3685f68142e0",
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "EmployeeWebApi": "1.0.0"
+  },
+  "commands": {
+    "web": "Microsoft.AspNet.Server.Kestrel",
+    "ef": "EntityFramework.Commands"
+  },
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "Unity": "4.0.1"
+      }
+    },
+    "dnxcore50": {}
+  },
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ],
+  "scripts": {
+    "prepublish": [
+      "npm install",
+      "bower install",
+      "gulp clean",
+      "gulp min"
+    ]
+  },
+  "entryPoint": "EmployeeWebApi",
+  "loadable": false
+}

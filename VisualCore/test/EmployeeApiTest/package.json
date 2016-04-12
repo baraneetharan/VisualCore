@@ -1,0 +1,13 @@
+{
+  "name": "Prolive_API_test",
+  "author": "Aravind",
+  "version": "0.0.1",
+  "dependencies": {
+    "chakram": "latest",
+    "mocha": "latest",
+    "better-mocha-html-reporter": "latest"
+  },
+  "devDependencies": {
+    "mochawesome": "^1.3.2"
+  }
+}

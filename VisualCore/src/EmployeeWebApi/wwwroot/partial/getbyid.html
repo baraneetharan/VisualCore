@@ -1,0 +1,44 @@
+<form class="form-horizontal" role="form" ng-submit="getByIdEmployee()">
+  
+ <div class="form-group">
+  <label for="title" class="col-sm-2 control-label">Employee ID</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="Employee.EmpID" class="form-control" id="title" placeholder="Employee ID Here"/>
+  </div>
+</div>
+  
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <input type="submit" class="btn btn-primary" value="GET"/>
+  </div>
+</div>
+</form>
+
+
+<div> <span><h2>Employee Details</h2></div>
+        <!--<h2>Employee Details</h2> <span style="float:right"><a href="#/create">Create Employee</a></span>-->
+         <table style="width:100%">
+            <thead>
+                <tr>
+                    
+                    <th>EmpID</th>
+                    <th>EmpName</th>
+                    <th>Designation</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hero in EmpById">
+                    <td>{{hero.EmpID}}</td>
+                    <td>{{hero.EmpName}}</td>
+                    <td>{{hero.Designation}}</td>
+                    <td>{{hero.Email}}</td>
+                    <td>{{hero.Phone}}</td>
+                    <td>{{hero.Address}}</td>
+                </tr>
+            </tbody>
+        </table> 
+      
+    </div>

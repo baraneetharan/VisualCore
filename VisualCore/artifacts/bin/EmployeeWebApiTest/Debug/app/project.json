@@ -1,0 +1,30 @@
+{
+  "authors": [
+    ""
+  ],
+  "commands": {
+    "test": "xunit.runner.dnx"
+  },
+  "dependencies": {
+    "EmployeeWebApiTest": "1.0.0"
+  },
+  "description": "",
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "Moq": "4.2.1510.2205"
+      }
+    }
+  },
+  "licenseUrl": "",
+  "projectUrl": "",
+  "tags": [
+    ""
+  ],
+  "tooling": {
+    "defaultNamespace": "<%= namespace %>"
+  },
+  "version": "1.0.0-*",
+  "entryPoint": "EmployeeWebApiTest",
+  "loadable": false
+}

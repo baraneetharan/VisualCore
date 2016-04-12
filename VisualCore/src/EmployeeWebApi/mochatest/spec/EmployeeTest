@@ -1,0 +1,39 @@
+var chakram = require('chakram');
+
+describe("Chakram", function() {
+    it("should offer simple HTTP request capabilities", function () {
+        return chakram.get("http://Localhost:5000/api/EmployeeMasters/");
+    });
+});
+// //getting token
+// describe('ProliveTest', function(){
+// 	it('should get TOKEN', function(){
+// 		this.timeout(5000);
+// 		return chakram.post(testConfig.getUserId,
+// 			{
+//            "empPassWord":testConfig.empPassWord,"empUserName":testConfig.empUserName,"device_id":testConfig.device_id,"device_token":testConfig.device_token
+//         },
+// 		 {
+// 			headers: {
+// 				'Content-Type': 'application/json'
+// 			},
+// 			//strictSSL: false,
+// 			//json: true,
+// 			
+// 		})
+// 		.then(function(response){
+// 			console.log(response.body.data.user_list[0].token);
+// 			tkn=response.body.data.user_list[0].token;
+// 			
+// 			console.log("token:::::::::::"+tkn);
+// 			 expect(response).to.have.status(200);
+// 			 expect(response).to.have.header('content-type', /json/);
+// 			
+// 			/*expect(response).to.comprise.of.json({
+//      		 args: { "usm_user_id":"1051","Employeename":"Aravind M","usm_email_id":"aravind.m@kgfsl.com","access_token":"3l7NmN7WaCuUayyAoMVJx50VNcsijkxI_vfkjS7E7dCu5k_BAZC4DJ0dzxzprvxfMP2t5xQPI6Cak7OvPUf4VbKcHbXDvch8icbcYR8mfp4i_RzxGUOYxnqVppAef8RyY8ZsDMF0naN6uDefddOtUjTafHnjGKTAj-FtrP4F7W2E1nXmsnfJy0XR7oMnkoM0dzFHST3gsbwvTbyYgNV18LY-Tjxh1h-O_pqiJhvlmr8" }
+//     		});*/
+// 
+// 		})
+// 		return chakram.wait();
+// 	})
+// });

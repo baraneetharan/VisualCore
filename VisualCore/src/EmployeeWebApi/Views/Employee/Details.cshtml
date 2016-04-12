@@ -1,0 +1,59 @@
+
+<h3>Details</h3>
+<div ng-controller="employeeController">
+        
+        <!--<table>
+            <thead>
+                <tr>
+                    <th>EmpID</th>
+                    <th>EmpName</th>
+                    <th>Designation</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hero in Employees">
+                    <td>{{hero.EmpID}}</td>
+                    <td>{{hero.EmpName}}</td>
+                    <td>{{hero.Designation}}</td>
+                    <td>{{hero.Email}}</td>
+                    <td>{{hero.Phone}}</td>
+                    <td>{{hero.Address}}</td>
+
+                </tr>
+            </tbody>
+        </table>-->
+        <div> <span><h2>Employee Details</h2></span><span style="float:right"> <button id="add" class="btn glyphicon glyphicon-plus" onClick="location.href='#/create'" </button></span></div>
+        <!--<h2>Employee Details</h2> <span style="float:right"><a href="#/create">Create Employee</a></span>-->
+         <table style="width:100%">
+            <thead>
+                <tr>
+                    
+                    <th>EmpID</th>
+                    <th>EmpName</th>
+                    <th>Designation</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hero in Employees">
+                    <td>{{hero.EmpID}}</td>
+                    <td>{{hero.EmpName}}</td>
+                    <td>{{hero.Designation}}</td>
+                    <td>{{hero.Email}}</td>
+                    <td>{{hero.Phone}}</td>
+                    <td>{{hero.Address}}</td>
+                </tr>
+            </tbody>
+        </table> 
+      
+    </div>
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
