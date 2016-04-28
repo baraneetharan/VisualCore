@@ -1,1 +1,4 @@
-/EmployeeWebApi/node_modules
+/src/EmployeeWebApi/node_modules/
+artifacts/bin
+.vs
+report
